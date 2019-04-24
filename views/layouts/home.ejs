@@ -1,10 +1,62 @@
-<p>HOME</p>
-<br>
-<form action="/" method="POST" >
-    SSN:<br>
-    <input type="text" name="ssn" >
-    <br>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>Personal Card</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="../assets/css/home.css" rel="stylesheet">
+
+
+   
+  </head>
+
+
+
+
+  <body >
     
-    <input type="submit" value="Submit">
-  </form> 
+      <div class="container tracking-in-expand">
+      
+          <div class="py-5 text-center">
+              <img  src="../assets/images/logo1.png " width="500px" height="250px">             
+       
+              <hr class="g-mb-0">
+    
+          </div>  
+
+          <form class="form-signin" method="POST" action="/" >
+           <!--  <% if(messages.voteFail){ %>-->
+            <!--   <div class="alert alert-danger   g-mt-10" align="center" role="alert">-->
+              <!--     <%=messages.voteFail%>-->
+             <!--  </div>-->
+              <!--  <% }%>-->
+            <img class="mb-4" src="../../assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+            <h1 class="h3 mb-3 font-weight-normal">Social Security Number</h1>
+            <label for="ssn" class="sr-only">Social Security Number</label>
+            <input type="text" id="ssn" name="ssn" class="form-control " placeholder="SSN" required autofocus>
+         
+              <button class="btn btn-lg btn-primary btn-block " type="submit">Get Information</button>
+              <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+        
+          
+          </form>
+
+
+
+          
+        </div>
+   
+
   
+  </body>
+</html>

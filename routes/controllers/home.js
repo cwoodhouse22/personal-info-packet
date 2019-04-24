@@ -9,6 +9,7 @@ app.get('/', (req,res)=>{
 
 
 function getPersonInfo(req,res,next){
+   
   
     myContract.getPerson(req.body.ssn,function(err,response){
         if(err) {
@@ -71,7 +72,7 @@ function getEducation(req,res,next){
 
 app.post('/',getPersonInfo,getFamilyInfo,getAddress,getEducation,(req,res)=>{
   
-     if(req.err){throw err;}
+     if(req.err){throw req.err;}
      else{
        
         res.render('layouts/dashboard',
