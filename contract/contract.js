@@ -303,7 +303,7 @@ var contract =   web3.eth.contract([
 		"type": "function"
 	}
 ]);
-var myContract = contract.at('0xbf6562a3cdbd68e6c1552817d285cb1848e16828');
+var myContract = contract.at('0xaf5127143a7d8fe47c975150f4a550259d9ffee3');
 
 
 module.exports = myContract;
